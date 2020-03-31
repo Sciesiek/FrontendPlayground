@@ -1,0 +1,18 @@
+div {
+    background-color: rgba(126, 252, 0, 0.493);
+    margin: 100px;
+}
+
+body {
+    background-image: url(../images/maxresdefault.jpg);
+}
+
+h1 {
+    color: red;
+    font-size: 200%;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
