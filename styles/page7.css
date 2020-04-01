@@ -1,0 +1,50 @@
+body{
+    background-image: url(../images/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+div{
+    background-color: rgba(255, 230, 0, 0.678);
+    padding: 50px;
+    margin: 50px;
+}
+
+h1#h_main{
+    background-color: cadetblue;
+    font-size: 300%;
+    color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+h1#h_main:active{
+    background-color: black;
+    color:  cadetblue;
+}
+
+iframe{
+    min-width: 1000px;
+    min-height: 500px;
+    border: none;
+}
+
+.hclass{
+    font-size: 300%;
+    text-align: center;
+    background-color: tomato;
+    color: white;
+}
+
+.hclass2{
+    font-size: 500%;
+    text-align: left;
+    background-color: teal;
+    color: violet;
+}
+
+
+
+

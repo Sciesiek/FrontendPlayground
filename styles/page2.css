@@ -1,10 +1,14 @@
 div {
-    background-color: rgba(126, 252, 0, 0.493);
+    background-color: rgba(14, 24, 3, 0.493);
     margin: 100px;
+    padding: 30px;
 }
 
 body {
     background-image: url(../images/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {

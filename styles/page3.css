@@ -1,0 +1,49 @@
+body{
+    background-image: url(../images/maxresdefault.jpg);
+}
+
+div{
+    margin: 25px;
+    padding: 25px;
+    font-size: 300%;
+}
+
+div.links{
+    background-color: rgba(0, 255, 255, 0.418);
+}
+
+div.buttons{
+    background-color: rgba(0, 255, 21, 0.418);
+}
+
+#img01{
+    border: 0px;
+    width: 150px;
+    height: 150px;
+}
+
+li.link{
+    margin: 50px;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+    background-color: indigo;
+    padding: 5px;
+    margin: 5px;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:active{
+    color: indigo;
+    background-color: white;
+}
+
+a:hover{
+    color: indigo;
+    background-color: khaki;
+}

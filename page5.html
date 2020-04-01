@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/page5.css">
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jan</td>
+                <td>NoFuck</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Dan</td>
+                <td>Koval</td>
+                <td>57</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <table id="t01">
+            <caption>phone numbers</caption>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Phone number</th>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>333 333 333</td>
+                <td>666 666 666</td>
+            </tr>
+            <tr>
+                <td>Dude</td>
+                <td>333 333 333</td>
+                <td>666 666 666</td>
+            </tr>
+            <tr>
+                <td>Doddy</td>
+                <td>333 333 333</td>
+                <td>666 666 666</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis dignissimos velit, autem rerum
+            perferendis cupiditate illo molestiae qui cumque quo quas vel asperiores quibusdam ab iusto commodi
+            excepturi deleniti.</p>
+        Hello World!
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, dolores nulla dignissimos, consequuntur
+            eligendi illum aspernatur culpa velit beatae doloremque quibusdam veritatis delectus adipisci. Doloremque
+            sequi dignissimos veniam commodi voluptatem.</p>
+        <span id="span01">Hello World!</span>
+    </div>
+
+    <div class="div01">
+        <h1>Noice</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates optio voluptas itaque cumque,
+            deserunt voluptatem esse totam error. Quis laudantium hic impedit deleniti quam nostrum esse autem minus
+            necessitatibus.</p>
+    </div>
+    <div class="div01">
+        <h1>Title 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id debitis blanditiis reiciendis? Officiis voluptas
+            excepturi cumque in eligendi voluptate, et aliquid at repellendus asperiores illo necessitatibus officia
+            magni ipsa optio!</p>
+    </div>
+    <div class="div01 main">
+        <h1>fast and furious</h1>
+        <p>Lorem ipsum dolor <span class="note">sit</span> amet consectetur adipisicing elit. Numquam alias itaque quae
+            nostrum velit. Atque, libero magni molestias animi enim dolore earum doloribus eveniet nihil dicta esse,
+            modi quisquam eius!</p>
+    </div>
+
+
+    <div>
+        <h1 class="textclass">Efffix</h1>
+        <p class="textclass tohide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque officia adipisci nobis
+            officiis. Quod, ipsam totam perspiciatis nesciunt animi facere dolorum asperiores. Doloremque exercitationem
+            nam, officiis architecto praesentium eveniet culpa.</p>
+
+
+        <button onclick="myFunction()">Hide elements</button>
+
+        <button onclick="myFunction2()">Show elements</button>
+
+
+
+    </div>
+
+    <script>
+        var x = document.getElementsByClassName("tohide");
+
+        function myFunction() {
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+
+        function myFunction2(){
+            for(let i = 0; i < x.length; i++){
+                x[i].style.display = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

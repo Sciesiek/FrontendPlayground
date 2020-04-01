@@ -1,0 +1,66 @@
+div{
+    background-color: rgba(192, 223, 16, 0.5);
+    margin: 50px;
+    padding: 50px;
+}
+
+body{
+    background-image: url(../images/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+table{
+    width: 100%;
+    border-spacing: 15px;    
+}
+
+table, td, th{
+    border: 2px solid;
+    /* border-collapse: collapse; */
+}
+
+td, th{
+    padding: 10px;
+}
+
+th{
+    text-align: left;
+}
+
+table>caption{
+    font-size: 300%;
+    color: black;
+}
+
+table#t01{
+    background-color: rgba(0, 0, 139, 0.548);
+    color: white;
+}
+
+table#t01 th{
+    background-color: rgba(255, 255, 0, 0.473);
+}
+
+/* span is in line notation */
+span.note{
+    color: red;
+    font-size: 250%;
+}
+
+div.div01{
+    background-color: black;
+    font-size: 200%;
+    color: white;
+}
+
+div.main{
+    margin: 100px;
+}
+
+.textclass{
+    color: darkgrey;
+    background-color: black;
+    font-size: 150%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/page8.css">
+</head>
+<body>
+
+
+
+    <img id="img01" src="images/workplace.jpg" alt="laptope">
+    <button onclick="swap()">swap image</button>
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+    <script>
+        var state = true;
+        var itemImage = document.getElementById("img01");
+        function swap(){
+            
+            if(state){
+                itemImage.src = "images/sayan.gif";
+                denyState();
+            }else{
+                itemImage.src = "images/workplace.jpg";
+                denyState();
+            }
+            
+        }
+        function denyState(){
+            state = !state;
+        }
+    </script>
+    <noscript>
+        <h1>your browser does not use js</h1>
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/page7.css">
+</head>
+<body>
+    <div>
+        <h1 id="h_main" onclick="headerTextChange()">Main Header</h1>
+    </div>
+    <script>
+        function headerTextChange(){
+            let result = document.getElementById("h_main").innerHTML === "Main Header" ? "Have a nice day!" : "Main Header";
+            document.getElementById("h_main").innerHTML = result;
+        }
+    </script>
+    <div>
+        <iframe src="page5.html" frameborder="0"></iframe>
+    </div>
+    <div>
+        <h1 id="h_js" class="hclass">Something something dakside    </h1>
+
+        <button onclick="btn1()">button1</button>
+        <button onclick="btn2()">button2</button>
+        <button onclick="btn3()">button3</button>
+    </div>
+    <script >
+        function btn1(){
+            document.getElementById("h_js").className = "hclass";
+        }
+
+        function btn2(){
+            document.getElementById('h_js').className = "hclass2";
+        }
+
+        function btn3(){
+            document.getElementById('h_js').className = "hclass3";
+        }
+
+
+    </script>
+
+</body>
+</html>
