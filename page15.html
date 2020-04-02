@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/page15.css">
+</head>
+
+<body>
+    <form action="POST">
+        <fieldset>
+            <label for="first_name">imie</label><br>
+            <input id="first_name" name="first_name" type="text"><br>
+    
+            <label for="last_name">nazwisko</label><br>
+            <input id="last_name" name="last_name" type="text"><br>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">mężczyzna</label><br>
+    
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">kobieta</label><br>
+        </fieldset>
+
+        <select name="cars" id="cars" size="3">
+            <option value="volvo">volvo</option>
+            <option value="merc">merc</option>
+            <option value="seat">seat</option>
+            <option value="subaru">subaru</option>
+            <option value="cytrynen">citroen</option>
+        </select><br>
+
+        <textarea name="something" id="something" cols="25" rows="10">Write something</textarea><br>
+
+        <input list="browsers">
+            <datalist id="browsers">
+                <option value="Opera">Opera</option>
+                <option value="Safari">Safari</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Edge">Edge</option>
+                <option value="Exploder">Exploder</option>
+            </datalist><br>
+
+
+        <button type="button" onclick="alert('something')">something button</button><br><br>
+
+        <input type="submit" value="Submit" onclick="alert('yolo')">
+    </form>
+
+    <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+        <input type="range" id="a" name="a" value="50">
+        <input type="number" name="b" id="b" value="50">
+        <output name="x" for="a b"></output><br><br>
+        <input type="submit" value="Wyślij">
+    </form>
+
+</body>
+
+</html>

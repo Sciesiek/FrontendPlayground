@@ -1,0 +1,19 @@
+
+
+.left, .right{
+    float: left;
+    width: 20%;
+    background-color: turquoise;
+}
+
+.main{
+    float: left;
+    width: 60%;
+    background-color: tomato;
+}
+/* Use media query to add breakpint at 800 px */
+@media screen and (max-width:800px) {
+    .left, .main, .right {
+        width: 100%; /*width is 100% when window is 800px or smaller*/
+    }
+}
