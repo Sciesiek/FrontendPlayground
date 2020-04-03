@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" autocomplete="on">
+        <fieldset>
+            <label for="fname">podaj imie</label><br>
+            <input type="text" name="fname" id="fname" value="Jan" readonly><br>
+            <label for="lname">podaj nazwisko</label><br>
+            <input type="text" name="lname" id="lname" disabled><br>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label for="PESEL">Podaj pesel</label><br>
+            <input type="text" size="11" maxlength="11" pattern="[0-9]{11}" autofocus><br>
+            <label for="phone">podaj numer telefonu</label><br>
+            <input type="text" name="phone" id="phone" placeholder="000 000 000" maxlength="11"
+                pattern="[0-9]{3} [0-9]{3} [0-9]{3}" size="11" required><br>
+            <label for="age">Wiek</label><br>
+            <input type="number" name="age" id="age" step="3"><br>
+            <label for="">Poniżej image działający jako submit</label> <br>
+            <input type="image" src="/images/sayan.gif" width="50" height="50" alt="sayan">
+        </fieldset>
+        <hr>
+        <fieldset>
+            <input list="car">
+            <datalist id="car">
+                <option value="car1">Sedan</option>
+                <option value="car2">hatchback</option>
+                <option value="car3">van</option>
+                <option value="car4">coupe</option>
+            </datalist><br>
+            <label for="files">wybierz pliki</label><br>
+            <input type="file" name="files" id="files" multiple>
+        </fieldset>
+        <input type="submit" value="zatwierdź">
+    </form>
+</body>
+
+</html>

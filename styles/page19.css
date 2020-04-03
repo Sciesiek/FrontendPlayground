@@ -1,0 +1,25 @@
+body{
+    background-image: url(../images/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div{
+    background-color: rgba(139, 0, 0, 0.562);
+    margin: 25px;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.canvas{
+    background-color: white;
+    border: solid 2px rgb(1, 255, 1);
+}
+
+#star{
+    fill:lime;
+    stroke:purple;
+    stroke-width:5;
+    fill-rule:evenodd;
+}
