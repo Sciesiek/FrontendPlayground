@@ -1,0 +1,16 @@
+*{
+    padding: 20px;
+}
+
+#h01{
+    background-color: rgb(255, 66, 66);
+    color: silver;
+    text-align: center;
+    border: 1px double black;
+    border-radius: 5px;
+}
+
+#p01{
+    background-color: rgb(231, 10, 10);
+    color: rgb(44, 223, 255);
+}

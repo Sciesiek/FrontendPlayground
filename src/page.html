@@ -1,171 +1,60 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/my.css">
-    <title>Document </title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS training</title>
+    <link id="css_link" rel="stylesheet" href="css/page.css">
 </head>
 
-<body">
-    <div class="h">
-        <h1 title="hyhyhyh">
-            Header updated no dawaj ss
-        </h1>
-        <p title="tooltip test">
-            first paragraph
-        </p>
-        <p title="tooltip 2nd trial">
-            second paragraph
-        </p>
-        <h1>TEST</h1>
-        <button>clicker</button>
+<body>
+    <button onclick="changeStyle()">Change style</button>
 
-        <h1 style="font-size: 60px;" title="h1">heading 1</h1>
-        <h2 title="h2">h2</h2>
-        <h3 title="h3">h3</h3>
-        <h4 title="h4">h4</h4>
-        <h5 title="h5">h5</h5>
-        <h6 title="h6">h6</h6>
-    </div>
+    <p id="try_id">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam corrupti dolorum incidunt amet ratione
+        eos saepe,
+        nostrum magnam consectetur id iure maiores quos debitis accusantium. Alias at fugiat ipsum eaque!</p>
 
-    <div class="list">
-        <h2>listy</h2>
-        <ul>
-            <li>herbata</li>
-            <li>kawa</li>
-            <li>soda</li>
-        </ul>
+    <p class="center large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ratione voluptatem omnis odio
+        consequuntur ipsa
+        adipisci harum provident vero esse? Cupiditate eligendi earum obcaecati eum dignissimos sit repudiandae
+        accusamus quos.</p>
 
-        <ol>
-            <li>a1</li>
-            <li>a2</li>
-            <li>a3</li>
-            <li>a4</li>
-            <li>a5</li>
-        </ol>
-    </div>
-    <div class="p">
-        <p>no dobra piszem przykładowy przykład
-            <br>z przejściem do nowej lini
-        </p>
-        <p>This is paragraph
-            with a lot of now
-            lines
-            but it does not shows
+    <h1 id="h01">Title</h1>
 
-        </p>
-        <p>
-            this is paragraph with multiple spaces
-            but they are not visible
-        </p>
-        <p>parabraph using 'br' in tag <br>
-            get us to new line</p>
-    </div>
+    <p id="p01">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus unde consequuntur laboriosam, quasi
+        maxime tenetur accusantium magni nemo maiores, nostrum, illo dolorum quod voluptates saepe a eum earum corporis
+        ea.</p>
 
-    <div class="pre">
-        <pre>
-            tag pre allows using formatted text
-            it preserwes new lines                  and multiple spaces     even tabs?
-        </pre>
-    </div>
+    <h2>Title 3</h2>
 
-    <div class="styles" style="text-align: center;">
-        <h1 style="color: brown;"> Lorem ipsum</h1>
-        <p style="color: rgb(20, 114, 62); font-family: 'Courier New', Courier, monospace;">Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam elementum neque et elit mollis ornare.
-            Aliquam non velit lectus. In hac habitasse platea dictumst. Integer sapien odio, cursus sed rutrum at,
-            elementum et nibh. Donec vehicula vestibulum mattis. Mauris porta, ante vitae commodo iaculis, ante
-            tellus lobortis dui, elementum pellentesque ipsum orci eget neque. Nam tristique ornare laoreet.
-            Aenean volutpat dui sit amet aliquet molestie. Donec elit nunc, ullamcorper et porta nec, placerat vel
-            metus.</p>
-
-        <p
-            style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: deeppink; font-size: 160%; text-align: right;">
-            Nullam efficitur, lectus in gravida interdum, metus urna accumsan justo, in imperdiet arcu ligula
-            sed quam. Morbi gravida eros tincidunt erat gravida pharetra. Maecenas interdum pellentesque leo ac
-            ullamcorper. Nullam finibus risus tellus, vitae tempus justo consectetur non. Mauris convallis accumsan
-            magna, et volutpat orci pretium sed. In luctus, lorem et cursus pellentesque, odio arcu fermentum leo,
-            quis pretium turpis turpis eget velit</p>
-
-    </div>
-
-    <div class="link">
-        <h5>linki</h5>
-        <a href="test.html" title="trial">test link</a>
-    </div>
-
-    <div class="img">
-        <h1>costam galaktyka</h1>
-        <img src="images/maxresdefault.jpg" alt="something something galaxy" width="500" height="300"
-            title='tooltip "for image"'>
-    </div>
-
-    <div class="formating-eleements" style="padding: 30px;">
-        <p style="font-size: 200%;"> <b>Nullam</b> <small><small>efficitur</small></small>, lectus in
-            <mark>gravida</mark> <ins>interdum, metus urna accumsan justo</ins>, in imperdiet arcu ligula
-            <del>sed</del> quam. Morbi gravida eros tincidunt erat gravida pharetra. Maecenas interdum pellentesque leo
-            ac
-            ullamcorper.<strong> Nullam finibus</strong> <strong>risus tellus</strong>, vitae tempus justo consectetur
-            non. <b>Mauris</b> convallis accumsan
-            magna, et volutpat orci <sup>pretium</sup> sed. In <sub>luctus</sub>,
-            <em>lorem et cursus pellentesque, odio
-                arcu fermentum leo,</em>
-            <i>quis pretium turpis turpis eget velit <br></i>
-        </p>
-
-        <q>
-            quted text, which is naturally quoted
-            yes its quoted
-        </q>
-
-        <h1 title="h1 header">quote from wwf website</h1>
-        <blockquote cite="http://www.worldwildlife.org/who/index.html">
-            For 50 years, WWF has been protecting the future of nature.
-            The world's leading conservation organization,
-            WWF works in 100 countries and is supported by
-            1.2 million members in the United States and
-            close to 5 million globally.
-        </blockquote>
-
-        <address>
-            Written by Jon Doe <br>
-            visit at <a href="test.html">www.com</a>
-        </address>
-
-        <p> <cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
-
-        <bdo dir="rtl">this text will be written from right to left</bdo><br>
-        <bdo dir="ltr">this text will be written from left to right</bdo>
-
-        <!-- comment -->
-    </div>
-
-    <div class="colors" style="color: white; font-size: 300%; text-align: center; background-image: url(images/maxresdefault.jpg); padding: 50px; margin: 50px;">
-        <div class="a" style="background-color: #0f0;">
-            <h1>
-                Teścik tła kolorowego
-            </h1>
-        </div>
-
-        <div class="b" style="background-color: rgba(41, 34, 27, 0.418);">
-            <p>Teścik tła kolorowego</p>
-        </div>
-        <div class="c" style="background-color: hsl(23, 50%, 80%);">
-            <p>Teścik tła kolorowego</p>
-        </div>
-
-        <p style="color: tomato;">Vivamus ut libero augue. Phasellus faucibus ligula eget enim aliquam, vitae efficitur tortor gravida. </p>
-        <p style="color: yellowgreen;">Duis fringilla mattis ante, nec gravida tortor. Praesent vel neque iaculis, aliquet dolor vitae, semper eros. </p>
-        <p style="color: violet;">Donec bibendum purus tincidunt rhoncus commodo. Vivamus pretium elit ac dolor commodo imperdiet. Maecenas semper eleifend fermentum.</p>
-
-        <h1 style="border: 2px solid tomato;">Hello World</h1>
-        <h1 style="border: 5px dotted green">Hello World</h1>
-        <h1 style="border: 10px double khaki;">Hello World</h1>
+    <h3>Title 3</h3>
 
 
-    </div>
+    <script>
+        var i = 1;
 
-</body">
+        function changeStyle() {
+
+            let css_link = document.getElementById('css_link');
+
+            switch (i) {
+                case 0:
+                    css_link.href = 'css/page.css';
+                    i++;
+                    break;
+                case 1:
+                    css_link.href = 'css/page_v2.css';
+                    i++;
+                    break;
+                case 2:
+                    css_link.href = 'css/page_v3.css';
+                    i = 0;
+                    break;
+            };
+
+        }
+    </script>
+</body>
 
 </html>

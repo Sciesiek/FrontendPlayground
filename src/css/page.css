@@ -1,0 +1,22 @@
+
+p#try_id{
+    color: rgb(233, 52, 52);
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.large{
+    font-size: large;
+}
+
+* {
+    color: white;
+    background-color: rgb(56, 56, 56);
+}
+
+h1, h2, h3{
+    text-align: center;
+}
