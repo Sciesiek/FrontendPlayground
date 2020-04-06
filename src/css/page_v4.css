@@ -1,0 +1,63 @@
+.div_test{
+    background-color: lightblue;
+    max-width: 800px;
+    text-align: right;
+    text-shadow: 1px 1px red;
+    font-size: 200%;
+}
+
+.div_min_width{
+    background-color: lightcoral;
+    min-width: 800px;
+}
+
+.main{
+    text-align: justify;
+    text-transform: capitalize;
+    text-indent: 25px;
+}
+
+#p01{
+    vertical-align: top;
+    text-decoration: overline line-through underline;
+    text-transform: uppercase;
+    
+}
+
+.box{
+    margin: 50px;
+    border: 50px green solid;
+    padding: 50px;
+    outline: red outset 5px;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 2;
+}
+
+.double{
+    float: left;
+    width: 42%;
+    padding: 2%;
+    margin: 2%;
+    background-color: gray;
+    color: blanchedalmond;
+    font-family: fantasy;
+    border-top: 5px solid black ;
+    outline: 2px yellow dotted;
+    outline-offset: 10px;
+    word-spacing: 10px;
+}
+
+.reversum{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    letter-spacing: -3px;
+}
+
+.impact{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.console{
+    font-family: "Lucida Console", Courier, monospace;;
+}

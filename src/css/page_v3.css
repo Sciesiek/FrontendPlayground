@@ -1,5 +1,21 @@
 *{
-    padding: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav{
+    background-color: blanchedalmond;
+}
+
+.main{
+    background-color: black;
+    opacity: 0.5;
+    color: blanchedalmond;
+}
+
+body{
+    background: url(../arch/images/maxresdefault.jpg) fixed no-repeat; /*shorthand property*/
+    background-size: cover;
 }
 
 #h01{
@@ -8,6 +24,10 @@
     text-align: center;
     border: 1px double black;
     border-radius: 5px;
+}
+
+button{
+    background-color: lightblue;
 }
 
 #p01{

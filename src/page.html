@@ -10,49 +10,150 @@
 
 <body>
     <button onclick="changeStyle()">Change style</button>
+    <nav>
+        <ul>
+            <li>page 1
+                <ol>
+                    <li>chap 1</li>
+                    <li>chap 2</li>
+                    <li>chap 3</li>
+                </ol>
+            </li>
+            <li>page 2
+                <ol>
+                    <li>chap 1</li>
+                    <li>chap 2</li>
+                    <li>chap 3</li>
+                </ol>
+            </li>
+            <li>page 3
+                <ol>
+                    <li>chap 1</li>
+                    <li>chap 2</li>
+                    <li>chap 3</li>
+                </ol>
+            </li>
+            <li>page 4
+                <ol>
+                    <li>chap 1</li>
+                    <li>chap 2</li>
+                    <li>chap 3</li>
+                </ol>
+            </li>
+            <li>page 5
+                <ol>
+                    <li>chap 1</li>
+                    <li>chap 2</li>
+                    <li>chap 3</li>
+                </ol>
+            </li>
+        </ul>
+    </nav>
+    <div class="main dashed_border div_min_width">
 
-    <p id="try_id">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam corrupti dolorum incidunt amet ratione
-        eos saepe,
-        nostrum magnam consectetur id iure maiores quos debitis accusantium. Alias at fugiat ipsum eaque!</p>
+        <p id="try_id" class="mix_border">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam corrupti
+            dolorum incidunt amet
+            ratione eos saepe, nostrum magnam consectetur id iure maiores quos debitis accusantium. Alias at fugiat ipsum eaque!
+            Possimus repellendus, quo consequatur quisquam, voluptatum, iusto alias consectetur tempore non
+            deserunt autem fugit laborum eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa qui in
+            modi iste. Repudiandae modi est magni dolor. Inventore, amet error? Asperiores quos ipsam, ducimus
+            laudantium magnam iste. Blanditiis, corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nostrum, similique minima in est reprehenderit numquam eius voluptates fugit tempora eum aperiam, hic at
+            quisquam beatae sit ut voluptatem quaerat qui. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Accusamus commodi et rem tempore quia illum voluptatibus obcaecati, aspernatur, doloremque culpa nobis fuga,
+            corporis rerum id minima? Commodi similique consequatur consectetur?</p>
 
-    <p class="center large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ratione voluptatem omnis odio
-        consequuntur ipsa
-        adipisci harum provident vero esse? Cupiditate eligendi earum obcaecati eum dignissimos sit repudiandae
-        accusamus quos.</p>
+        <p class="center large ridge_border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ratione
+            voluptatem omnis
+            odio
+            consequuntur ipsa
+            adipisci harum provident vero esse? Cupiditate eligendi earum obcaecati eum dignissimos sit repudiandae
+            accusamus quos.</p>
 
-    <h1 id="h01">Title</h1>
+        <h1 id="h01" class="grove_border">Title</h1>
 
-    <p id="p01">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus unde consequuntur laboriosam, quasi
-        maxime tenetur accusantium magni nemo maiores, nostrum, illo dolorum quod voluptates saepe a eum earum corporis
-        ea.</p>
+        <p id="p01" class="inset_border">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus unde
+            consequuntur
+            laboriosam, quasi
+            maxime tenetur accusantium magni nemo maiores, nostrum, illo dolorum quod voluptates saepe a eum earum
+            corporis
+            ea.</p>
 
-    <h2>Title 3</h2>
+        <h2 class="dotted_border">Title 3</h2>
 
-    <h3>Title 3</h3>
+        <p class="solid_border impact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorum eveniet recusandae
+            sed aspernatur reprehenderit sequi totam placeat dolore non quam voluptatum sit, officiis ipsa asperiores
+            maiores sapiente suscipit tenetur.</p>
 
+        <h3 class="left_border">Title 3</h3>
+
+        <h1 class="left_border_round">Titled 4</h1>
+    </div>
+
+    <div class="div_test">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim blanditiis praesentium dolor voluptatum
+            libero. </p>
+
+    </div>
+    <div class="box">
+        <h1 class="reversum">Super title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, libero iure, optio exercitationem aperiam ab
+            esse odio ut reiciendis ratione cumque ex enim distinctio odit iste repudiandae, nihil dolorum eligendi?</p>
+
+    </div>
+
+    <div class="double">
+        <p class="console">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex architecto culpa iure sunt
+            voluptatum maiores, eos animi officia. Deleniti quas impedit inventore officia, corrupti laudantium
+            voluptate tenetur eum repudiandae?</p>
+    </div>
+
+    <div class="double">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis reiciendis dolorum sint, non beatae ipsam
+            impedit odit eaque quas porro quia quibusdam error est asperiores ad nam nostrum esse. Ipsam.</p>
+    </div>
 
     <script>
         var i = 1;
 
+        var css_link = document.getElementById('css_link');
+
+        if (localStorage.getItem('style') !== null) {
+            css_link.href = localStorage.getItem('style');
+        }
+
+        if (localStorage.getItem('nextNumber') !== null) {
+            i = Number(localStorage.getItem('nextNumber').valueOf());
+        }
+        console.log(i);
+
+
         function changeStyle() {
-
-            let css_link = document.getElementById('css_link');
-
             switch (i) {
                 case 0:
-                    css_link.href = 'css/page.css';
                     i++;
+                    style('css/page.css', i);
                     break;
                 case 1:
-                    css_link.href = 'css/page_v2.css';
                     i++;
+                    style('css/page_v2.css', i);
                     break;
                 case 2:
-                    css_link.href = 'css/page_v3.css';
+                    i++;
+                    style('css/page_v3.css', i);
+                    break;
+                case 3:
                     i = 0;
+                    style('css/page_v4.css', i);
                     break;
             };
 
+        }
+
+        function style(style, nextNumber) {
+            css_link.href = style;
+            localStorage.setItem('style', style);
+            localStorage.setItem('nextNumber', nextNumber);
         }
     </script>
 </body>
