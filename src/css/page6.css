@@ -1,0 +1,55 @@
+h1#background{
+    background-color: red;
+}
+
+h1#inline{
+    background-color: green;
+    display: inline;
+}
+
+a#block{
+    display: block;
+    background-color: grey;
+}
+
+a#block:hover{
+    background-color: rgb(194, 185, 185);
+}
+
+
+div.triple{
+    text-align: center;
+    width: 29%;
+    margin: 1%;
+    padding: 1%;
+    outline: 1px green solid;
+    float: left;
+}
+
+button{
+    background-color: green;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+
+}
+
+button:hover{
+    background-color: white;
+    color: green;
+    box-shadow: none;
+
+}
+
+div#div04{
+    float: left;
+    display: block;
+    border: 1px solid green;
+    width: 500px;
+}
+
+div#div05{
+    max-width: 500px;
+    border: 1px solid green;
+}
+

@@ -1,0 +1,51 @@
+table.a, .a>thead>tr>th, .a>tbody>tr>td {
+    border: 1px solid rgb(181, 181, 181);
+}
+
+table.a{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.a>thead>tr>th{
+    text-align: left;
+    height: 50px;
+}
+
+.a>tbody>tr>td{
+    height: 50px;
+    vertical-align: bottom;
+}
+
+.t01{
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table.t01>thead>tr>th{
+    background-color: rgb(27, 189, 27);
+    color: white;
+}
+
+table.t01>thead>tr>th, table.t01>tbody>tr>td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+table.t01>tbody>tr:hover{
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: rgb(226, 243, 191);
+}
+
+div.responsive_table{
+    overflow-x: auto;
+}
+
+table.t02{
+    width: 900px;
+    table-layout: initial;
+}

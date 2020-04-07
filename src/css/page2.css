@@ -1,0 +1,32 @@
+
+h1.title{
+    font-size: 10vw;
+}
+
+p.normal{
+    font-style: normal;
+    font-size: 30px;
+}
+
+p.italic{
+    font-style: italic;
+    font-size: 2em;
+    font-size: 150%;
+}
+
+p.oblique{
+    font-style: oblique;
+    font-size: 0.75em;
+}
+
+p.bold{
+    font-weight: bold;
+}
+
+p.small_caps{
+    font-variant: small-caps;
+}
+
+p.shorthand{
+    font: italic small-caps bold 12px/30px Georgia, serif;
+}

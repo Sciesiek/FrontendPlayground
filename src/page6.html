@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page6.css">
+</head>
+<body>
+    
+</body>
+    <h1 id="background">Title</h1>
+    <h1 id="inline">Tytuł nie zajmujący całej lini</h1>
+    <a id="block" href="">link</a>
+    <div>
+        <div class="triple" id="div01">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolorem soluta tempore temporibus perferendis quam dolores recusandae odit! Tempora quisquam labore suscipit rem repudiandae error pariatur! Dolor voluptate nihil officiis!</p>
+            <button onclick="hide('div01')">Hide</button>
+        </div>
+        <div class="triple" id="div02">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque velit et, nihil veniam optio, fugit, esse recusandae officia maiores quod saepe nam quaerat quae minus ipsum fugiat ea in illo.</p>
+            <button onclick="remove('div02')">Remove</button>
+        </div>
+        <div class="triple" id="div03">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae excepturi architecto ipsa voluptatem. Magnam nam possimus incidunt illo optio cum, voluptatem pariatur eum qui rerum nisi similique provident, consequatur perspiciatis.</p>
+            <Button onclick="reset(['div01', 'div02'])">Reset</Button>
+        </div>
+    </div>
+    
+
+    <div id="div04">
+        a
+    </div>
+    
+    <div id="div05">
+        b
+    </div>
+
+
+
+    <script>
+
+        function hide(elementId){
+            let div = document.getElementById(elementId);
+            div.style.visibility = "hidden";
+        }
+
+        function remove(elementId){
+            let div = document.getElementById(elementId);
+            div.style.display = "none";
+        }
+
+        function reset(elements){
+            elements.forEach(element => {
+                console.log(element);
+                let div = document.getElementById(element);
+                div.style.display = "block";
+                div.style.visibility = "visible";
+            });
+        }
+
+    </script>
+</html>
