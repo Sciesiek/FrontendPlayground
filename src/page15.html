@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="link_id" rel="stylesheet" href="css/page15.css">
+</head>
+<body>
+    <nav class="a">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Info</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Dropdown</a>
+                <div>
+                    <a href="">dropdown 1</a>
+                    <a href="">dropdown 2</a>
+                    <a href="">dropdown 3</a>
+                    <a href="">dropdown 4</a>
+                </div>
+            </li>
+        </ul>
+        <button onclick="changeStyle()">Change style</button>
+    </nav>
+    <div class="main">
+        <div class="images_3">
+            <a href="/src/img/img_5terre.jpg"><img src="/src/img/img_5terre.jpg" alt=""></a>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, error? Dolor ea quis impedit nobis vitae consectetur recusandae adipisci omnis repellendus nostrum molestiae, reprehenderit est sit consequatur perspiciatis possimus accusamus?</p>
+        </div>
+        <div class="images_3">
+            <a href="/src/img/img_mountains.jpg"><img src="/src/img/img_mountains.jpg" alt=""></a>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, error? Dolor ea quis impedit nobis vitae consectetur recusandae adipisci omnis repellendus nostrum molestiae, reprehenderit est sit consequatur perspiciatis possimus accusamus?</p>
+        </div>
+        <div class="images_3">
+            <a href="/src/img/img_lights.jpg"><img src="/src/img/img_lights.jpg" alt=""></a>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, error? Dolor ea quis impedit nobis vitae consectetur recusandae adipisci omnis repellendus nostrum molestiae, reprehenderit est sit consequatur perspiciatis possimus accusamus?</p>
+        </div>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi commodi voluptatum possimus neque quis optio, perspiciatis iste impedit. Asperiores architecto impedit itaque doloremque? Nemo nesciunt et repudiandae quas ipsum animi?
+        Architecto, fuga saepe repellendus quas, recusandae ratione et ipsum laborum nisi accusantium dolorum odit assumenda! Quis temporibus tenetur reiciendis, dolorem quasi dolore inventore odio repudiandae aspernatur, sapiente at iusto ipsum.
+        Corrupti ut soluta aliquid consectetur, itaque dicta ab molestiae expedita nulla id facere quisquam ea iste non accusantium excepturi autem aliquam similique nostrum odit quae magnam ducimus optio velit. Nesciunt!
+        Corporis iusto debitis placeat quas unde aut error vero adipisci soluta mollitia fuga dolorem nostrum, voluptas laboriosam non quibusdam. Eius, quaerat nemo. Nemo asperiores laboriosam assumenda necessitatibus ipsam laudantium unde.
+        Tempore labore velit, perferendis a saepe odit. Minus omnis eos eius quidem animi, eaque facere sed hic numquam repellat earum officiis magnam est mollitia nemo. Id repudiandae nobis totam vitae!
+        Aperiam dolorum quisquam ipsa magni sit et doloremque voluptate! Incidunt commodi animi explicabo aliquid exercitationem dolorum iusto cumque ratione excepturi tempora, magnam quos asperiores temporibus ipsum. Aliquam iure est magni!
+        Laboriosam expedita nulla adipisci exercitationem amet provident ad aliquam doloribus, consectetur tenetur vitae minima inventore, eos at, possimus labore. Optio dicta necessitatibus facilis id magni laudantium assumenda quis pariatur soluta?
+        Eius similique quod tempora nobis eligendi voluptatem enim ad tenetur modi atque nemo possimus optio inventore officiis eos natus, dolores autem fuga ducimus dolorum aut commodi debitis obcaecati. Asperiores, fugit.
+        Odio sint possimus ad quos soluta quam non sunt voluptatem? Beatae vero hic consectetur incidunt ad blanditiis ea culpa, modi repellat voluptatibus. Accusamus necessitatibus excepturi corrupti enim ex quae recusandae?
+        Dignissimos ipsum sed assumenda aliquam neque! Excepturi necessitatibus asperiores magni libero, laboriosam animi quo, sed hic perspiciatis vel modi odio repellendus quidem neque. Doloremque cumque officia culpa totam quae cupiditate.</p>
+    </div>
+    <script>
+        var css = document.getElementById('link_id');
+        var which_style = 0;
+        function changeStyle(){
+            switch(which_style){
+                case 0:
+                    css.href = 'css/page15_v2.css';
+                    which_style++;
+                    break;
+                case 1:
+                    css.href = 'css/page15.css';
+                    which_style = 0;
+                    break;
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+nav.a{
+    display: block;
+    background-color: rgb(94, 94, 94);
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+nav.a ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.a li, nav.a button, nav.a ul, nav.a a{
+    display: inline-block;
+}
+
+nav.a button, nav.a a{
+    background-color: rgb(94, 94, 94);
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-right: 1px white solid;
+    padding: 3px;
+    margin: 2px 0 2px 0;
+}
+
+nav.a button:hover, nav.a a:hover{
+    background-color: white;
+    color: rgb(94, 94, 94);
+}
+
+nav.a li>div{
+    display: none;
+    background-color: rgb(94, 94, 94);
+    position: absolute;
+    z-index: 1;
+}
+
+nav.a li>div>a{
+    display: block;
+    border: none;
+    border-bottom: 1px white solid;
+    width: 160px;
+    margin: 0 2px 0 2px;
+    float: none;
+}
+
+nav.a li:hover>div{
+    display: block;
+}
+
+.main{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main p{
+    text-align: left;
+}
+
+div.images_3{
+    display: inline-block;
+    border: 1px solid rgb(94, 94, 94);
+    padding: 5px;
+    width: 25%;
+    margin: 10px;
+}
+
+div.images_3 img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 400px){
+    nav.a li, nav.a ul, nav.a button, nav.a a{
+        display: block;
+    }
+    
+    nav.a{
+        position: relative;
+    }
+    nav.a button, nav.a a{
+        text-align: center;
+        float: none;
+        border: none;
+        margin: 0;
+        border-bottom: white 1px solid;
+        width: 100%;
+    }
+    .main{
+        margin-top: 0;
+    }
+    div.images_3{
+        width: 90%;
+    }
+}

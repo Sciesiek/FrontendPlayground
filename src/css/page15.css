@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+}
+
+nav.a{
+    background-color:  white;
+    color: white;
+    outline: green 1px solid;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+nav.a ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.a li{
+    margin: 0;
+    padding: 0;
+}
+
+nav.a a, nav.a button{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    border-bottom: green 1px solid;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav.a button{
+    display: block;
+    border: none;
+    border-bottom: green 1px solid;
+    width: 100%;
+}
+
+nav.a a:hover, nav.a button:hover{
+    color: white;
+    background-color: green;
+}
+
+nav.a li>div{
+    display: none;
+    width: 150px;
+    background-color: white;
+    border-top: 1px solid green;
+    position: absolute;
+    left: 100%;
+}
+
+nav.a li:hover>div{
+    display: inline-block;
+}
+
+div.main{
+    margin-top: 10px;
+    margin-left: 20%;
+    text-align: center;
+}
+
+div.main p{
+    text-align: left;
+}
+
+div.images_3{
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+    border: green 1px solid;
+    padding: 2px;
+    font-size: xx-small;
+}
+
+div.images_3:hover{
+    background-color: green;
+    color: white;
+}
+
+div.images_3 img{
+    text-align: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width:400px){
+    nav.a{
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+
+    nav.a li, nav.a ul, nav.a a, nav.a button, nav.a div{
+        display: block;
+    }
+
+    nav.a li:hover>div{
+        display: block;
+        width: 100%;
+        left: 0%;
+    }
+
+    div.main{
+        margin: 0;
+    }
+
+    div.images_3{
+        display: block;
+        width: 100%;
+    }
+}
