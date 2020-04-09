@@ -1,0 +1,64 @@
+.a{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+.b{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+.c{
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+.nav{
+    list-style-type: none;
+    text-align: center;
+    background-color: black;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+.nav li:hover{
+    background-color: red;
+}
+
+.center{
+    margin: auto;
+    max-width: 800px;
+    border: 1px solid green;
+    background-color: rgb(151, 218, 151);
+    padding: 10px;
+}
+
+.d01{
+    position: absolute;
+    margin: 15px;
+    right: 20px;
+    width: 300px;
+    border: black 1px solid;
+    color: white;
+    background-color: rgb(126, 126, 126);
+    border-radius: 5px;
+    padding: 5px;
+}
+

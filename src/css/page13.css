@@ -1,0 +1,28 @@
+p.a::first-line{
+    color: red;
+}
+
+p.a::first-letter{
+    color: blue;
+    font-size: xx-large;
+}
+
+h1.a::before{
+    content: url(../arch/images/sayan.gif);
+}
+
+h1.a::after{
+    content: url(../arch/images/sayan.gif);
+}
+p.a::selection{
+    background-color: black;
+    color: white;
+}
+
+img{
+    opacity: 0.5;
+}
+
+img:hover{
+    opacity: 1;
+}

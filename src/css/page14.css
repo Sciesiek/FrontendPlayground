@@ -1,0 +1,162 @@
+
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+nav.a {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: gainsboro;
+    /* border: gainsboro 1px solid; */
+    height: 100%;
+    position: fixed;
+}
+
+nav.a ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.a li a{
+    display: inline-block;
+    width: 90%;
+    margin-left: 2px;
+    color: black;
+    border-bottom: rgb(240, 237, 237) 1px solid;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+}
+
+nav.a a:hover{
+    background-color: black;
+    color: gainsboro;
+}
+
+nav.a li>div{
+    width: 150px;
+    display: none;
+    position: absolute;
+    background-color: gainsboro;
+    left: 100%;
+    z-index: 1;
+}
+nav.a li:hover>div{
+    display: inline-block;
+}
+
+.main{
+    padding: 15px;
+    margin-left: 25%;
+}
+
+
+nav.b{
+    margin: 0px;
+    padding: 0px;
+    width: 74%;
+    position: fixed;
+    top: 0;
+    left: 25%;
+    background-color: green;
+    overflow: hidden;
+    height: auto;
+}
+
+nav.b ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.b li{
+    float: left;
+}
+
+nav.b a{
+    display: block;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+}
+
+nav.b a:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+@media screen and (max-width: 400px){
+    nav.b li{
+        float: none;
+    }
+    
+}
+
+.right{
+    float: right;
+}
+
+nav.c{
+    border: 1px solid green;
+    background-color: rgb(128, 231, 128);
+    width: 100%;
+    position: sticky;
+    top: 30px;
+}
+
+nav.c ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav.c li{
+    display: inline-block;
+}
+
+nav.c a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+nav.c li>div{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(128, 231, 128);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav.c li>div>a{
+    margin: 0 2px 0 2px;
+    border-bottom: 1px solid green;
+    width: 150px;
+    text-align: left;
+}
+
+nav.c li:hover>div{
+     display: block;
+     
+}
+
+nav.c a:hover{
+    background-color: green;
+    color: white;
+}
+
+
+

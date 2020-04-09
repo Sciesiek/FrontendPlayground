@@ -1,0 +1,42 @@
+div{
+    outline: blue solid 1px;
+}
+
+.box3{
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.box3:hover{
+    background-color: cornsilk;
+}
+
+.box4{
+    float: left;
+    width: 25%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.box4:hover{
+    background-color: cyan;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: nowrap;
+    clear: both;
+}
+
+.box2{
+    float: left;
+    width: 50%;
+    border: crimson 1px solid;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.box2:hover{
+    background-color: lightcoral;
+}

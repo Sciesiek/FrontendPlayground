@@ -1,0 +1,25 @@
+div{
+    border: solid 1px gold;
+}
+
+#d01{
+    padding: 5px;
+    clear: right;
+    overflow: auto;
+}
+
+#img01{
+    float: right;
+    margin: 5px;
+    
+}
+
+#d02{
+    clear: left;
+    overflow: auto;
+}
+
+#img02{
+    float: left;
+    margin: 5px;
+}

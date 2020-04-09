@@ -1,0 +1,22 @@
+div{
+    border: 1px solid red;
+}
+
+#d01{
+    width: 800px;
+    height: 200px;
+    overflow: scroll;
+}
+
+#d02{
+    width: 800px;
+    height: 200px;
+    overflow: auto;
+}
+
+#d03{
+    max-width: 800px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: show;
+}
