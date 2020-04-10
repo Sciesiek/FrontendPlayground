@@ -1,0 +1,27 @@
+a[href]{
+    background-color: greenyellow;
+}
+
+a[target='_blank']{
+    background: red;
+}
+
+[title~="flower"]{
+    color: blue;
+}
+
+[title|='flower']{
+    color: palegreen;
+}
+
+[class^='top']{
+    color: purple;
+}
+
+[class$='top']{
+    color: slateblue;
+}
+
+[class*='te']{
+    color: brown;
+}

@@ -1,0 +1,20 @@
+div{
+    border-radius: 25px 5px 25px 5px;
+    padding: 15px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.gradient{
+    background-image: linear-gradient(to right,rgb(20, 58, 20), rgb(68, 104, 15));
+}
+
+.gradient2{
+    background-image: linear-gradient(to bottom right,rgb(133, 16, 16), rgb(24, 15, 104));
+
+}
+
+.gradial{
+    background-image: radial-gradient(red, green, blue);
+    height: 500px;
+}

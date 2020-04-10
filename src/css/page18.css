@@ -1,0 +1,8 @@
+body{
+    counter-reset: supacountah;
+}
+
+h2::before{
+    counter-increment: supacountah;
+    content: "super counter:" counter(supacountah) ': ';
+}
