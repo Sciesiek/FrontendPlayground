@@ -3,6 +3,7 @@ div{
     padding: 15px;
     color: white;
     box-sizing: border-box;
+    margin: 20px;
 }
 
 .gradient{
@@ -11,10 +12,44 @@ div{
 
 .gradient2{
     background-image: linear-gradient(to bottom right,rgb(133, 16, 16), rgb(24, 15, 104));
-
+    box-shadow: -10px -10px 5px grey;
 }
 
 .gradial{
     background-image: radial-gradient(red, green, blue);
     height: 500px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.171);
+}
+
+.shadow{
+    color: white;
+    background-color: gray;
+    size: 200%;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.651), 3px 0 2px green;
+}
+
+div.d01{
+    color: black;
+    float: left;
+    width: 30%;
+    padding: 5px;
+    margin: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0;
+}
+
+.clip{
+    white-space: nowrap;
+    width: 80%;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.elipsis{
+    white-space: nowrap;
+    width: 80%;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

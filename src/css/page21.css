@@ -1,0 +1,134 @@
+.smoll{
+    display: inline-block;
+    border: red 1px solid;
+    padding: 25px;
+    width: 10%;
+}
+
+.smoll:hover{
+    transform: rotate(360deg);
+    padding: 100px;
+    transition: transform 2s, padding 3s;
+    transition-delay: 1s;
+}
+
+@keyframes anima{
+    from {
+        background-color: white;
+        color: black;
+    }
+
+    to{
+        background-color: black;
+        color: white;
+        padding: 40px;
+    }
+}
+
+.animated{
+    display: inline-block;
+    border: green 1px solid;
+    padding: 25px;
+}
+
+.animated:hover{
+    animation-name: anima;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anima2{
+    0%{
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    25%{
+        box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    50%{
+        box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    75%{
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    100%{
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.animated2{
+    display: inline-block;
+    border: blue 1px solid;
+    padding: 30px;
+    width: 25%;
+}
+
+.animated2:hover{
+    animation-name: anima2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+#myImg{
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#myImg:hover{
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content{
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(0.1);
+    }
+
+    to{
+        transform: translate(-50%, -50%);
+    }
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 40px;
+}
+
+
+
+

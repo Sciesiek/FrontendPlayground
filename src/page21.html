@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page21.css">
+</head>
+<body>
+    <div class="smoll">2d transform transition delay 1s</div>
+    <div class="smoll">2d transform transition delay 1s</div>
+    <div class="smoll">2d transform transition delay 1s</div><br>
+
+    <div class="animated">css animation</div>
+    <div class="animated">css animation</div>
+    <div class="animated">css animation</div><br>
+
+    <div class="animated2">css animation</div>
+    <div class="animated2">css animation</div>
+    <div class="animated2">css animation</div>
+
+    <img id="myImg" src="/src/img/img_5terre.jpg" alt="">
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        var modal = document.getElementById('myModal');
+        var modalImg = document.getElementById('img01');
+
+        var img = document.getElementById('myImg');
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        const f =function() { 
+            modal.style.display = "none";
+        }
+        span.onclick = f;
+
+        modal.onclick = f;
+
+    </script>
+</body>
+</html>
