@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page24.css">
+</head>
+<body>
+    <h1>Title</h1>
+    <div class="central">
+        <h1>Obrazek zachowujący swoją oryginalną szerokość, zmieniający ją tylko wtedy gdy rozmiar okna jest mniejszy niż jego rozmiar</h1>
+        <img src="img/img_lights.jpg" alt="">
+    </div>
+    <h1>Galeria obrazów, kliknij na miniature aby wyświetlić ją w głównym panelu</h1>
+    <div class="grid-container">
+        <div id="item1" class="item"><img src="img/img_5terre.jpg" alt=""></div>
+        <div id="item2" class="item"><img src="img/img_lights.jpg" alt=""></div>
+        <div id="item3" class="item"><img src="img/img_forest.jpg" alt=""></div>
+        <div id="item4" class="item"><img src="img/img_mountains.jpg" alt=""></div>
+        <div id="item5" class="item"><img src="img/img_mountains.jpg" alt=""></div>
+        <div id="item6" class="item"><img src="img/img_lights.jpg" alt=""></div>
+        <div id="item7" class="item"><img src="img/img_forest.jpg" alt=""></div>
+        <div id="item8" class="item"><img src="img/img_lights.jpg" alt=""></div>
+        <div id="item9" class="item"><img src="img/img_5terre.jpg" alt=""></div>
+    </div>
+    <script>
+        var gridItems = document.getElementsByClassName('item');
+        console.log('aaa');
+        for(let i = 0; i < gridItems.length; i++){
+            console.log(i);
+            gridItems[i].onclick = function(){
+                gridItems[5].innerHTML = gridItems[i].innerHTML;
+            };
+        }
+
+    </script>
+</body>
+</html>
