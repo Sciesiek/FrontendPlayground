@@ -27,14 +27,8 @@ body{
     overflow: auto;
 }
 
-
-
-
-
-
-
 @media print{
-    .sandbox{
+    .sandBox{
         display: none;
     }
 
@@ -59,8 +53,6 @@ body{
     th{
         font-weight: bold;
     }
-
-
 
 }
 
