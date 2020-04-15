@@ -1,0 +1,14 @@
+body, html{
+    margin: auto;
+    height: 100%;
+}
+
+#sandboxContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    background-color: skyblue;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
